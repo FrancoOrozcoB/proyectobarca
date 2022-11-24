@@ -827,7 +827,20 @@ div .imgHero:hover {
 .registrate {
     height: 300px;
 }
+.registrate .registrateContenedor{
+    height: 250px;
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registrate .registrateContenedor h2{
+    font-size: 20px;
+    width: 80%;
+}
 .boton{
+    width:200px;
     height: 45px;
     padding: 10px;
     margin: 5px;
@@ -839,14 +852,6 @@ div .imgHero:hover {
     gap: 10px;
 }
 
-.registrateContenedor div img {
-    height: 70%;
-    width: 75%;
-    padding: 5px;
-}
-.registrateContenedor div h3 {
-    font-size: 10px;
-}
 .productos {
     height: 350px;
 }
@@ -1165,10 +1170,9 @@ footer a img {
     width: 20px;
     height: 20px;
 }
-}
-
 
 /*!REGISTRATE -- MEDIA QUERIE--*/
+
 @media screen and (max-width:1024px) {
     .heroRegistrate {
         height: 400px;
@@ -1293,4 +1297,4 @@ footer a img {
     .boton{
         font-size: 12px;
     }
-}
+}}
