@@ -22,7 +22,7 @@
 .gridContenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 116px auto 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-areas:
         "header header header"
         "main main main"
@@ -67,7 +67,7 @@ nav .navbar.navbar-expand-lg-navbar-light-bg-light {
     font-size: small;
     font-family: gotham-regular, sans-serif;
     font-weight: 300;
-    transition: .5s ease-in;
+    transition: 1s ease-out;
 }
 
 .collapse.navbar-collapse .nav-link.active:hover {
@@ -435,7 +435,7 @@ div .imgHero:hover {
     color: #ffffff;
     font-size: 45px;
     padding-left: 100px;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .especialidadesProductos h2 {
@@ -545,6 +545,7 @@ div .imgHero:hover {
     font-size: 40px;
     color: #ffffff;
     text-align: center;
+    padding-top: 10px;
 }
 
 .empresaFamiliar {
@@ -667,6 +668,7 @@ div .imgHero:hover {
     font-size: 40px;
     color: white;
     text-align: center;
+    padding-top: 10px;
 }
 
 .contacto h3 {
@@ -786,7 +788,7 @@ footer a img {
     height: 50px;
 }
 
-/*!-- INDEX---- MEDIA QUERIE-----RESPONSIVE-- */
+/*!-- INDEX---- MEDIA QUERIE--*/
 @media screen and (max-width:1024px) {
 .gridContenedor {
     display: grid;
@@ -822,62 +824,43 @@ div .imgHero{
 div .imgHero:hover {
     transform: none;
 }
-.especialidades {
+.registrate {
     height: 300px;
-}
-
-.especialidades .asociateContenedor {
-    height: 300px;
-}
-
-.especialidades .asociateContenedor h2 {
-    width: 80%;
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-.especialidades .asociateContenedor p{
-    font-size: 18px;
-    margin-bottom: 10px;
 }
 .boton{
     height: 45px;
     padding: 10px;
     margin: 5px;
 }
-.especialidades .asociateContenedor a{
-    height: 30px;
-    font-size: 12px;
-    padding-top: 5px;
-}
-.gridContainerGaleria {
+.registrateContenedor {
     display: grid;
-    grid-template-columns: repeat(3, 130px);
+    grid-template-columns: repeat(3, 100px);
     grid-template-rows: 110px 110px;
     gap: 10px;
 }
 
-.gridContainerGaleria div img {
+.registrateContenedor div img {
     height: 70%;
     width: 75%;
     padding: 5px;
 }
-.gridContainerGaleria div h3 {
+.registrateContenedor div h3 {
     font-size: 10px;
 }
-.beneficios {
+.productos {
     height: 350px;
 }
 
-.beneficios .beneficiosItems h2 {
+.productos .productosItems h2 {
     font-size: 25px;
 }
 
-.beneficios .beneficiosItems ul li {
+.productos .productosItems ul li {
     font-size: 18px;
     padding: 5px;
 }
 
-.beneficios .beneficiosImg img {
+.productos .productosItems img {
     width: 290px;
     height: 300px;
 }
@@ -913,8 +896,8 @@ div .imgHero:hover {
 
 @media screen and (max-width:768px) {
     header img {
-        width: 250px;
-        height: 80px;
+        width: 110px;
+        height: 70px;
     }
 .gridContenedor {
     display: grid;
@@ -952,24 +935,24 @@ div .imgHero:hover {
 .gridContainerGaleria {
     display: none;
 }
-.especialidades {
+.registrate {
     height: 250px;
     justify-content: center;
     align-items: center;
 }
 
-.especialidades .asociateContenedor {
+.registrate .registrateContenedor {
     height: 250px;
     margin-top: 10px;
     padding: 15px;
 }
 
-.especialidades .asociateContenedor h2 {
+.registrate .registrateContenedor h2 {
     width: 80%;
     font-size: 20px;
     margin-bottom: 10px;
 }
-.especialidades .asociateContenedor p{
+.registrate .registrateContenedor p{
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -978,27 +961,27 @@ div .imgHero:hover {
     padding: 10px;
     margin: 5px;
 }
-.especialidades .asociateContenedor a{
+.registrate .registrateContenedor a{
     height: 25px;
     font-size: 12px;
     padding: 5px 5px 5px;
 }
-.beneficios {
+.productos {
     height: 500px;
     flex-direction: column;
     align-items: center;
 }
 
-.beneficios .beneficiosItems h2 {
+.productos .productosItems h2 {
     font-size: 20px;
 }
 
-.beneficios .beneficiosItems ul li {
+.productos .productosItems ul li {
     font-size: 15px;
     padding: 5px;
 }
 
-.beneficios .beneficiosImg img {
+.productos .productosImg img {
     width: 280px;
     height: 290px;
 }
@@ -1064,8 +1047,8 @@ footer a img {
         grid-template-rows: 60px auto 100px;
     }
 header img {
-        width: 220px;
-        height: 50px;
+        width: 100px;
+        height: 60px;
     }
 .hero {
     width: 100%;
@@ -1089,18 +1072,18 @@ header img {
     height: 200px;
 }
 
-.especialidades .asociateContenedor {
+.registrate .registrateContenedor {
     height: 200px;
     margin-top: 10px;
     padding: 15px;
 }
 
-.especialidades .asociateContenedor h2 {
+.registrate .registrateContenedor h2 {
     width: 80%;
     font-size: 20px;
     margin-bottom: 10px;
 }
-.especialidades .asociateContenedor p{
+.registrate .registrateContenedor p{
     font-size: 12px;
     margin-bottom: 10px;
 }
@@ -1109,26 +1092,26 @@ header img {
     padding: 2px;
     margin: 5px;
 }
-.especialidades .asociateContenedor a{
+.registrate .registrateContenedor a{
     height: 28px;
     font-size: 10px;
 }
-.beneficios {
+.productos {
     height: 500px;
     margin: 5px;
     justify-content: center;
 }
 
-.beneficios .beneficiosItems h2 {
+.productos .productosItems h2 {
     font-size: 20px;
 }
 
-.beneficios .beneficiosItems ul li {
+.productos .productosItems ul li {
     font-size: 12px;
     padding: 5px;
 }
 
-.beneficios .beneficiosImg img {
+.productos .productosImg img {
     width: 260px;
     height: 260px;
 }
@@ -1185,24 +1168,24 @@ footer a img {
 }
 
 
-/* ASOCIATE ---- MEDIA QUERIE--- RESPONSIVE */
+/*!REGISTRATE -- MEDIA QUERIE--*/
 @media screen and (max-width:1024px) {
-    .heroAsociate {
+    .heroRegistrate {
         height: 400px;
     }
-    .heroAsociate .asociateTexto h1 {
+    .heroRegistrate .registrateTexto h1 {
         font-size: 35px;
     }
     
-    .heroAsociate .asociateTexto h2 {
+    .heroRegistrate .registrateTexto h2 {
         font-size: 25px;
     }
     
-    .heroAsociate .asociateTexto p {
+    .heroRegistrate .registrateTexto p {
         font-size: 15px;
     }
     
-    .heroAsociate img {
+    .heroRegistrate img {
         width: 290px;
         height: 280px;
     } 
@@ -1226,26 +1209,26 @@ footer a img {
     }
 }
 @media screen and (max-width:768px) {
-    .heroAsociate {
+    .heroRegistrate {
         height: 200px;
         padding: 2px;
         flex-direction: column;
         text-align: center;
     }
-    .heroAsociate .asociateTexto h1 {
+    .heroRegistrate .registrateTexto h1 {
         padding-top: 10px;
         font-size: 30px;
     }
     
-    .heroAsociate .asociateTexto h2 {
+    .heroRegistrate .registrateTexto h2 {
         font-size: 20px;
     }
     
-    .heroAsociate .asociateTexto p {
+    .heroRegistrate .registrateTexto p {
         font-size: 14px;
     }
     
-    .heroAsociate img {
+    .heroRegistrate img {
     display: none;
     } 
     .formulario {
@@ -1272,19 +1255,19 @@ footer a img {
     }
 }
 @media screen and (max-width:480px){
-    .heroAsociate {
+    .heroRegistrate {
         height: 190px;
         margin-top: 10px;
     }
-    .heroAsociate .asociateTexto h1 {
+    .heroRegistrate .registrateTexto h1 {
         font-size: 25px;
     }
     
-    .heroAsociate .asociateTexto h2 {
+    .heroRegistrate .registrateTexto h2 {
         font-size: 20px;
     }
     
-    .heroAsociate .asociateTexto p {
+    .heroRegistrate .registrateTexto p {
         font-size: 12px;
     }
 
