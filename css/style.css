@@ -44,13 +44,13 @@
 
 
 /*!----- HEADER----- */
-header {
+.encabezado{
     width: 100%;
     background-color: #fdfdfdd2;
     height: 100%;
 }
 
-header img {
+.navbar-brand img {
     width: 90px;
     height: 90px;
 }
@@ -108,50 +108,14 @@ nav .navbar.navbar-expand-lg-navbar-light-bg-light {
     margin-left: 15px;
 }
 
-div .imgHero {
+.hero .imgHero img {
     width: 430px;
     height: 380px;
     transition: .5s ease-in;
 }
 
-div .imgHero:hover {
-    transform: scale(1.2);
-}
-
-.gridContainerGaleria {
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: 120px 120px;
-    gap: 15px;
-    padding: 5px;
-    margin: 10px;
-}
-
-.gridContainerGaleria div img {
-    height: 75%;
-    width: 80%;
-    padding: 5px;
-    background-size: cover;
-
-}
-
-.gridContainerGaleria div {
-    position: relative;
-    text-align: center;
-}
-
-.gridContainerGaleria div h3 {
-    position: absolute;
-    bottom: 0;
-    font-size: 25px;
-    width: 100%;
-    background-color: #ffffff;
-}
-
-.gridItem {
-    font-family: gotham-regular, sans-serif;
-    font-weight: 300;
-    border: 2px solid rgba(0, 0, 0, 0.445);
+.hero .imgHero:hover {
+    transform: scale(1.1);
 }
 
 .registrate {
@@ -181,7 +145,7 @@ div .imgHero:hover {
     margin-bottom: 20px;
 }
 
-.registrate .registrateContenedor a {
+.registrate .registrateContenedor .boton a {
     width: 60%;
     color: rgb(248, 248, 248);
     font-family: gotham-regular, sans-serif;
@@ -280,25 +244,25 @@ div .imgHero:hover {
     padding-left: 20px;
 }
 
-.heroRegistrate .registrateTexto h1 {
+.heroRegistrate h1 {
     font-family: gotham-black, sans-serif;
     color: #f0eff3;
     font-size: 45px;
 }
 
-.heroRegistrate .registrateTexto h2 {
+.heroRegistrate h2 {
     font-family: gotham-bold, sans-serif;
     color: rgb(242, 241, 245);
     font-size: 25px;
 }
 
-.heroRegistrate .registrateTexto p {
+.heroRegistrate p {
     font-family: gotham-bold, sans-serif;
     color: rgb(255, 255, 255);
     font-size: 17px;
 }
 
-.heroRegistrate img {
+.registrateImg img {
     width: 330px;
     height: 350px;
 }
@@ -325,9 +289,9 @@ div .imgHero:hover {
     margin-bottom: 20px;
 }
 
-.formulario h4 {
+div form h4 {
     font-family: gotham-black, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .formulario label {
@@ -438,7 +402,7 @@ div .imgHero:hover {
     padding-top: 10px;
 }
 
-.especialidadesProductos h2 {
+.especialidadesProductos .especialidadestitulo h2 {
     font-family: gotham-black, sans-serif;
     font-size: 40px;
     color: #0c18c2;
@@ -458,22 +422,23 @@ div .imgHero:hover {
     margin: 10px;
 }
 
-.gridContainerProductoGaleria div img {
-    height: 75%;
-    width: 50%;
-    padding: 5px;
-    transition: all 500ms ease-out;
-
-}
-
-.gridContainerProductoGaleria div {
+.gridContainerProductoGaleria .gridItemProducto {
+    font-family: gotham-regular, sans-serif;
+    font-weight: 300;
+    border: 2px solid black;
     position: relative;
     text-align: center;
     overflow: hidden;
     cursor: pointer;
 }
+.gridContainerProductoGaleria .gridItemProducto img {
+    height: 75%;
+    width: 50%;
+    padding: 5px;
+    transition: all 500ms ease-out;
+}
 
-.gridContainerProductoGaleria div .capa {
+.gridContainerProductoGaleria .gridItemProducto .capa {
     position: absolute;
     top: 0;
     width: 100%;
@@ -500,37 +465,20 @@ div .imgHero:hover {
     font-size: 20px;
 }
 
-.gridContainerProductoGaleria div .capa h4 {
+.gridContainerProductoGaleria .gridItemProducto .capa h4 {
     color: white;
     font-family: gotham-black, sans-serif;
     transition: all 500ms ease-out;
     margin-top: 20px;
 }
 
-.gridContainerProductoGaleria div .capa p {
+.gridContainerProductoGaleria .gridItemProducto .capa p {
     color: white;
     font-size: 15px;
     font-family: gotham-bold, sans-serif;
     text-align: center;
     line-height: 1.5;
     width: 100%;
-}
-
-.gridContainerProductoGaleria div h3 {
-    position: absolute;
-    bottom: 0;
-    font-size: 13px;
-    width: 100%;
-    height: 17px;
-    color: white;
-    background: rgba(0, 0, 0, 0.863);
-
-}
-
-.gridItemProducto {
-    font-family: gotham-regular, sans-serif;
-    font-weight: 300;
-    border: 2px solid black;
 }
 
 /*!-----QUIENES SOMOS----- */
@@ -546,17 +494,6 @@ div .imgHero:hover {
     color: #ffffff;
     text-align: center;
     padding-top: 10px;
-}
-
-.empresaFamiliar {
-    border: 2px solid #000000;
-    background-color: #e8e5eb;
-    margin-top: 20px;
-    font-family: gotham-bold, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
 }
 
 .mision {
@@ -649,13 +586,6 @@ div .imgHero:hover {
 }
 
 /*!--MAIN CONTACTO-- */
-.contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px;
-}
 
 .heroContacto .heroTitulo {
     background: rgb(58, 60, 170);
@@ -670,21 +600,17 @@ div .imgHero:hover {
     text-align: center;
     padding-top: 10px;
 }
-
-.contacto h3 {
-    font-family: gotham-black, sans-serif;
-    font-size: 17px;
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
 }
 
 .mapaContacto {
     width: 500px;
     padding-right: 10px;
-}
-
-.mapaContacto h1 {
-    font-family: gotham-black, sans-serif;
-    font-size: 30px;
-    color: #000000;
 }
 
 .mapaContacto p {
@@ -713,7 +639,7 @@ div .imgHero:hover {
     -moz-box-shadow: 4px 7px 9px 0px rgba(14, 13, 13, 0.75);
 }
 
-.control {
+form .control {
     width: 100%;
     background-color: #c9c5cc;
     padding: 10px;
@@ -724,7 +650,7 @@ div .imgHero:hover {
 .formularioContacto h3{
     text-align: center;
 }
-.formularioContacto .boton {
+.formularioContacto .botonC {
     width: 100%;
     background-color: rgba(16, 33, 190, 0.884);
     color: black;
@@ -755,9 +681,8 @@ div .imgHero:hover {
     text-align: center;
 }
 
-.footerCaja h2,
-h3 {
-    font-size: 16px;
+.footerCaja h2{
+    font-size: 20px;
 }
 
 .footerA {
@@ -777,12 +702,9 @@ h3 {
     order: 3;
     text-align: center;
 }
-
-footer img {
-    width: 70px;
-    height: 70px;
+footer h3{
+    font-size: 20px;
 }
-
 footer a img {
     width: 50px;
     height: 50px;

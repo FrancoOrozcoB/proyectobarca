@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: gotham-bold;
+  src: url(../font/gotham-bold.otf); }
+
+@font-face {
+  font-family: gotham-black;
+  src: url(../font/gotham-black.otf); }
+
+@font-face {
+  font-family: gotham-regular;
+  src: url(../font/gotham-regular.otf); }
+
+.gridContenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+.encabezado {
+  grid-area: header; }
+
+.contenido {
+  grid-area: main;
+  background-color: white; }
+
+.pie {
+  grid-area: footer; }
+
+.encabezado {
+  width: 100%;
+  background-color: #f0eeee;
+  height: 100%; }
+  .encabezado .navbar .container-fluid {
+    background-color: #f0eeee; }
+    .encabezado .navbar .container-fluid .navbar-brand img {
+      width: 90px;
+      height: 90px; }
+    .encabezado .navbar .container-fluid .collapse .nav-link.active {
+      font-size: small;
+      font-family: gotham-regular, sans-serif;
+      font-weight: 300;
+      transition: 1s ease-out; }
+      .encabezado .navbar .container-fluid .collapse .nav-link.active:hover {
+        color: #0f0bf3; }
+
+.hero {
+  width: 100%;
+  height: 470px;
+  background: #0f0bf3;
+  background: linear-gradient(66deg, #0f0bf3 45%, #aa3a3a 56%);
+  background-attachment: fixed;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .hero div {
+    font-family: gotham-black, sans-serif;
+    padding: 10px;
+    margin: 20px; }
+    .hero div h1 {
+      color: #ffffff;
+      font-size: 45px;
+      margin-left: 15px; }
+    .hero div h2 {
+      color: #ffffff;
+      font-size: 25px;
+      margin-left: 15px; }
+  .hero .imgHero img {
+    width: 430px;
+    height: 380px;
+    transition: .5s ease-in; }
+    .hero .imgHero img:hover {
+      transform: scale(1.1); }
+
+.registrate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  text-align: center; }
+  .registrate .registrateContenedor h2 {
+    width: 100%;
+    color: black;
+    font-size: 35px;
+    font-family: gotham-black, sans-serif;
+    text-align: center;
+    margin-bottom: 35px; }
+    .registrate .registrateContenedor h2 span {
+      color: #0f0bf3; }
+  .registrate .registrateContenedor p {
+    font-size: 20px;
+    font-family: gotham-bold, sans-serif;
+    margin-bottom: 20px; }
+  .registrate .registrateContenedor .botonA {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 1s;
+    overflow: hidden; }
+    .registrate .registrateContenedor .botonA a {
+      color: #ffffff;
+      font-family: gotham-regular, sans-serif;
+      font-weight: 300px;
+      text-decoration: none;
+      background-color: #0f0bf3;
+      padding: 8px; }
+
+.productos {
+  width: 95%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px;
+  background-image: url(../img/groovepaper.png); }
+  .productos .productosItems {
+    width: 100%; }
+    .productos .productosItems h2 {
+      font-size: 35px;
+      font-family: gotham-black, sans-serif;
+      color: #aa3a3a;
+      text-align: center;
+      padding: 20px; }
+    .productos .productosItems ul li {
+      font-size: medium;
+      font-family: gotham-bold, sans-serif;
+      font-weight: 200;
+      padding: 10px; }
+  .productos .productosImg img {
+    width: 450px;
+    height: 400px; }
+
+.conocenos {
+  width: 95%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 30px; }
+  .conocenos .conocenosHistoria {
+    width: 100%; }
+    .conocenos .conocenosHistoria h2 {
+      font-size: 35px;
+      font-family: gotham-black, sans-serif;
+      color: #aa3a3a;
+      text-align: center;
+      padding: 10px; }
+    .conocenos .conocenosHistoria p {
+      font-family: gotham-bold, sans-serif;
+      font-size: 25px;
+      margin-bottom: 15px;
+      text-align: center; }
+    .conocenos .conocenosHistoria h3 {
+      font-family: gotham-black, sans-serif;
+      font-size: 30px;
+      text-align: center;
+      color: #0f0bf3;
+      padding: 15px; }
+  .conocenos .conocenosImg img {
+    width: 300px;
+    height: 300px;
+    padding: 5px; }
+
+.heroRegistrate {
+  width: 100%;
+  height: 400px;
+  background: #0f0bf3;
+  background: linear-gradient(66deg, #aa3a3a 45%, #0f0bf3 56%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 20px; }
+  .heroRegistrate div h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 45px; }
+  .heroRegistrate div h2 {
+    font-family: gotham-bold, sans-serif;
+    color: #ffffff;
+    font-size: 25px; }
+  .heroRegistrate div p {
+    font-family: gotham-bold, sans-serif;
+    color: #ffffff;
+    font-size: 18px; }
+  .heroRegistrate .registrateImg img {
+    width: 330px;
+    height: 350px; }
+
+.formulario {
+  width: 900px;
+  padding: 10px;
+  background-color: #aa3a3a;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: gotham-bold, sans-serif;
+  color: black;
+  box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+  -webkit-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75);
+  -moz-box-shadow: 4px 7px 9px 0px rgba(115, 115, 115, 0.75); }
+  .formulario h3 {
+    font-family: gotham-black, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px; }
+  .formulario form label {
+    font-size: 16px; }
+  .formulario form .item {
+    width: 100%;
+    background-color: #f0eeee;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    font-family: gotham-bold, sans-serif;
+    font-size: 18px; }
+  .formulario div form h4 {
+    font-family: gotham-black, sans-serif;
+    font-size: 18px; }
+  .formulario div form .boton {
+    font-family: gotham-regular, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .formulario div form .boton:hover {
+      color: #0f0bf3; }
+    .formulario div form .boton span {
+      position: absolute;
+      background-color: #0f0bf3;
+      transition: 1s; }
+    .formulario div form .boton span:nth-child(1) {
+      width: 100%;
+      height: 1px;
+      top: 0;
+      left: -100%; }
+    .formulario div form .boton span:nth-child(2) {
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      right: -100%; }
+    .formulario div form .boton span:nth-child(3) {
+      width: 1px;
+      height: 100%;
+      bottom: -100%;
+      left: 0; }
+    .formulario div form .boton span:nth-child(4) {
+      width: 1px;
+      height: 100%;
+      top: -100%;
+      right: 0; }
+    .formulario div form .boton:hover span:nth-child(1) {
+      left: 0; }
+    .formulario div form .boton:hover span:nth-child(2) {
+      right: 0; }
+    .formulario div form .boton:hover span:nth-child(3) {
+      bottom: 0; }
+    .formulario div form .boton:hover span:nth-child(4) {
+      top: 0; }
+
+.heroProductos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: black;
+  background: linear-gradient(66deg, #0f0bf3 45%, #aa3a3a 56%); }
+  .heroProductos .encabezadoProductos h1 {
+    font-family: gotham-black, sans-serif;
+    color: #ffffff;
+    font-size: 45px;
+    padding-left: 100px;
+    padding-top: 10px; }
+
+.especialidadesProductos .especialidadestitulo h2 {
+  font-family: gotham-black, sans-serif;
+  font-size: 40px;
+  color: #0f0bf3;
+  background-color: #aa3a3a;
+  text-align: center;
+  margin-top: 10px; }
+
+.especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 250px 250px 250px;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  margin: 10px; }
+  .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto {
+    font-family: gotham-regular, sans-serif;
+    font-weight: 300;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer; }
+    .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto:hover > .capa {
+      opacity: 1;
+      visibility: visible; }
+    .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto:hover > img {
+      transform: scale(1.1); }
+    .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto:hover > .capa h4 {
+      margin-top: 50px;
+      margin-bottom: 10px;
+      font-size: 20px; }
+    .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto img {
+      height: 75%;
+      width: 50%;
+      padding: 5px;
+      transition: all 500ms ease-out; }
+    .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto .capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto .capa h4 {
+        color: #ffffff;
+        font-family: gotham-black, sans-serif;
+        transition: all 500ms ease-out;
+        margin-top: 20px; }
+      .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria .gridItemProducto .capa p {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: gotham-bold, sans-serif;
+        text-align: center;
+        line-height: 1.5;
+        width: 100%; }
+
+.heroQuienesSomos {
+  background: #0f0bf3;
+  background: linear-gradient(66deg, #0f0bf3 45%, #aa3a3a 56%);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .heroQuienesSomos .encabezadoQuienesSomos {
+    background: #aa3a3a;
+    background: linear-gradient(66deg, #0f0bf3 45%, #aa3a3a 56%);
+    height: 50px; }
+    .heroQuienesSomos .encabezadoQuienesSomos h1 {
+      font-family: gotham-black, sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 10px; }
+
+.mision {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .mision .misionDiv {
+    width: 700px;
+    margin-right: 50px; }
+    .mision .misionDiv h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 35px;
+      color: #aa3a3a; }
+    .mision .misionDiv p {
+      font-family: gotham-bold, sans-serif; }
+  .mision .misionImg img {
+    width: 250px;
+    height: 300px; }
+
+.vision {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .vision .visionDiv {
+    width: 700px;
+    margin-right: 50px; }
+    .vision .visionDiv h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 35px;
+      color: #0f0bf3; }
+    .vision .visionDiv p {
+      font-family: gotham-bold, sans-serif; }
+  .vision .visionImg img {
+    width: 250px;
+    height: 300px;
+    padding-right: 30px; }
+
+.historia {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px; }
+  .historia .nuestraHistoria {
+    width: 700px;
+    margin-right: 50px; }
+    .historia .nuestraHistoria h2 {
+      font-family: gotham-black, sans-serif;
+      font-size: 35px;
+      color: #aa3a3a; }
+    .historia .nuestraHistoria p {
+      font-family: gotham-bold, sans-serif; }
+  .historia .nuestraHistoriaImg img {
+    width: 350px;
+    height: 250px; }
+
+.heroContacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background: #aa3a3a;
+  background: linear-gradient(44deg, #aa3a3a 55%, #0f0bf3 46%);
+  width: 100%;
+  height: 50px; }
+  .heroContacto .heroTitulo {
+    background: #0f0bf3;
+    height: 50px; }
+    .heroContacto .heroTitulo h1 {
+      font-family: gotham-black, sans-serif;
+      font-size: 40px;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 10px; }
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px; }
+  .contacto .mapaContacto {
+    width: 500px;
+    padding-right: 10px; }
+    .contacto .mapaContacto p {
+      font-family: gotham-bold, sans-serif;
+      font-size: 16px; }
+  .contacto .numeros ul li {
+    width: 90px;
+    list-style: none;
+    text-align: center;
+    background-color: #c9c5cc;
+    color: black;
+    border-radius: 4px; }
+  .contacto form .formularioContacto {
+    width: 500px;
+    padding: 30px;
+    background-color: #f0eeee;
+    font-family: gotham-bold, sans-serif;
+    font-size: 16px;
+    color: black;
+    box-shadow: 4px 7px 9px 0px rgba(240, 9, 9, 0.75);
+    -webkit-box-shadow: 4px 7px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 7px 9px 0px rgba(14, 13, 13, 0.75); }
+    .contacto form .formularioContacto h3 {
+      text-align: center; }
+    .contacto form .formularioContacto .control {
+      width: 100%;
+      background-color: #f0eeee;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      border: 1px solid #050505; }
+    .contacto form .formularioContacto .botonC {
+      width: 100%;
+      background-color: rgba(16, 33, 190, 0.884);
+      color: #ffffff;
+      font-family: gotham-regular, sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      border: none;
+      padding: 10px;
+      margin: 12px 0; }
+
+.footerCaja {
+  height: 100px;
+  font-family: gotham-bold, sans-serif;
+  font-size: 16px;
+  background-color: #f0eeee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .footerCaja .footerH {
+    order: 2;
+    text-align: center; }
+    .footerCaja .footerH h2 {
+      font-size: 16px; }
+  .footerCaja .footerA {
+    order: 1; }
+    .footerCaja .footerA a {
+      text-decoration: none;
+      color: black; }
+      .footerCaja .footerA a img {
+        width: 80px;
+        height: 80px; }
+  .footerCaja .footerRedes {
+    order: 3;
+    text-align: center; }
+    .footerCaja .footerRedes h3 {
+      font-size: 20px; }
+    .footerCaja .footerRedes a img {
+      width: 50px;
+      height: 50px; }
+    .footerCaja .footerRedes a img {
+      width: 50px;
+      height: 50px; }

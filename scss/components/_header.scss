@@ -1,0 +1,25 @@
+.encabezado{
+    width: 100%;
+    background-color:$color-terciario;
+    height: 100%;
+    .navbar{
+        .container-fluid{
+            background-color: $color-terciario;
+            .navbar-brand{
+                img{
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+            .collapse .nav-link.active{
+                font-size: small;
+                font-family: gotham-regular, sans-serif;
+                font-weight: 300;
+                transition: 1s ease-out;
+                &:hover{
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+}
