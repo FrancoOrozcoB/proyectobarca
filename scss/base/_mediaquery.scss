@@ -1,0 +1,728 @@
+/*!-- INDEX---- MEDIA QUERIE--*/
+@media screen and (max-width:1024px) {
+    .gridContenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 120px auto 100px;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer"
+        ;
+    }
+    .contenido .hero {
+        width: 100%;
+        height: 400px;
+    } 
+    
+    .contenido .hero div h1 {
+        font-family: gotham-black, sans-serif;
+        color: #ffffff;
+        font-size: 35px;
+    }
+    
+    .contenido .hero div h2 {
+        font-family: gotham-black, sans-serif;
+        color: rgb(207, 207, 207);
+        font-size: 25px;
+    }
+    
+    .contenido .hero .imgHero{
+        height: 400px;
+        width: 280px;
+    }
+    .contenido .hero .imgHero:hover {
+        transform: none;
+    }
+    .registrate {
+        height: 300px;
+    }
+    .registrate .registrateContenedor{
+        height: 250px;
+        margin-top: 10px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .registrate .registrateContenedor h2{
+        font-size: 20px;
+        width: 80%;
+    }
+    .registrate .registrateContenedor .botonA{
+        width:200px;
+        height: 45px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .registrateContenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: 110px 110px;
+        gap: 10px;
+    }
+    
+    .productos {
+        height: 350px;
+    }
+    
+    .productos .productosItems h2 {
+        font-size: 25px;
+    }
+    
+    .productos .productosItems ul li {
+        font-size: 18px;
+        padding: 5px;
+    }
+    
+    .productos .productosItems img {
+        width: 290px;
+        height: 300px;
+    }
+    .conocenos {
+        height: 350px;
+    }
+    
+    .conocenos .conocenosHistoria h2 {
+        font-size: 25px;
+    }
+    
+    .conocenos .conocenosHistoria p {
+        font-family: gotham-bold, sans-serif;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .footerCaja {
+        font-size: 5px;
+    }
+    
+    .conocenos .conocenosImg {
+        width: 290px;
+        height: 300px;
+    }
+    
+    .conocenos .conocenosImg img {
+        width: 290px;
+        height: 300px;
+        padding: 5px;
+    }
+    }
+    
+    @media screen and (max-width:768px) {
+        header img {
+            width: 110px;
+            height: 70px;
+        }
+    .gridContenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px auto 100px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+    .contenido .hero {
+        width: 100%;
+        height: 300px;
+        flex-direction: column;
+    } 
+    
+    .contenido .hero div h1 {
+        font-family: gotham-black, sans-serif;
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 15px;
+    }
+    .contenido .hero .imgHero{
+        height: 320px;
+        width: 280px;
+    }
+    .contenido .hero div h2 {
+        font-family: gotham-black, sans-serif;
+        color: rgb(207, 207, 207);
+        font-size: 20px;
+    }
+    .contenido .hero .imgHero{
+        display: none;
+    }
+    .gridContainerGaleria {
+        display: none;
+    }
+    .registrate {
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .registrate .registrateContenedor {
+        height: 250px;
+        margin-top: 10px;
+        padding: 15px;
+    }
+    
+    .registrate .registrateContenedor h2 {
+        width: 80%;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .registrate .registrateContenedor p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .botonA{
+        height: 40px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .registrate .registrateContenedor .botonA a{
+        height: 25px;
+        font-size: 12px;
+        padding: 5px 5px 5px;
+    }
+    .productos {
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .productos .productosItems h2 {
+        font-size: 20px;
+    }
+    
+    .productos .productosItems ul li {
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .productos .productosImg img {
+        width: 280px;
+        height: 290px;
+    }
+    .conocenos {
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .conocenos .conocenosHistoria h2 {
+        font-size: 20px;
+    }
+    
+    .conocenos .conocenosHistoria h3{
+        font-size: 18px;
+    }
+    
+    .conocenos .conocenosHistoria p {
+        font-family: gotham-bold, sans-serif;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .conocenos .conocenosImg {
+        width: 290px;
+        height: 300px;
+    }
+    
+    .conocenos .conocenosImg img {
+        width: 280px;
+        height: 280px;
+        padding: 5px;
+    }
+    
+    .footerCaja h2,h3 {
+        font-size: 15px;
+    }
+    
+    .footerCaja {
+        width: 100%;
+        height: 110px;
+        font-size: small;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    footer a img {
+        width: 20px;
+        height: 20px;
+    }
+    }
+    
+    @media screen and (max-width:480px){
+    .gridContenedor {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60px auto 100px;
+        }
+    header img {
+            width: 100px;
+            height: 60px;
+        }
+    .contenido .hero {
+        width: 100%;
+        height: 270px;
+    } 
+    
+    .contenido .hero div h1 {
+        font-family: gotham-black, sans-serif;
+        color: #ffffff;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+    
+    .contenido .hero div h2 {
+        font-size: 20px;
+    }
+    
+    .registrate .registrateContenedor {
+        height: 200px;
+        margin-top: 10px;
+        padding: 15px;
+    }
+    
+    .registrate .registrateContenedor h2 {
+        width: 80%;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .registrate .registrateContenedor p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .botonA{
+        height: 30px;
+        padding: 2px;
+        margin: 5px;
+    }
+    .registrate .registrateContenedor .botonA a{
+        height: 28px;
+        font-size: 10px;
+    }
+    .productos {
+        height: 500px;
+        margin: 5px;
+        justify-content: center;
+    }
+    
+    .productos .productosItems h2 {
+        font-size: 20px;
+    }
+    
+    .productos .productosItems ul li {
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    .productos .productosImg img {
+        width: 260px;
+        height: 260px;
+    }
+    .conocenos {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .conocenos .conocenosHistoria h2 {
+        font-size: 20px;
+    }
+    
+    .conocenos .conocenosHistoria h3{
+        font-size: 15px;
+    }
+    
+    .conocenos .conocenosHistoria p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .conocenos .conocenosImg {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .conocenos .conocenosImg img {
+        width: 260px;
+        height: 260px;
+        padding: 5px;
+    }
+    
+    .footerCaja .footerH h2 {
+        font-size: 13px;
+    }
+    .footerCaja .footerH h3 {
+        font-size: 13px;
+    }
+    .footerCaja {
+        width: 100%;
+        height: 110px;
+        font-size: small;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerCaja .footerH img {
+        width: 20px;
+        height: 20px;
+    }
+    .footerCaja .footerRedes img {
+        width: 20px;
+        height: 20px;
+    }
+    .footerCaja .footerRedes a img {
+        width: 20px;
+        height: 20px;
+    }
+    
+/*!REGISTRATE -- MEDIA QUERIE--*/
+    
+    @media screen and (max-width:1024px) {
+        .heroRegistrate {
+            height: 400px;
+        }
+        .heroRegistrate div h1 {
+            font-size: 35px;
+        }
+        
+        .heroRegistrate div h2 {
+            font-size: 25px;
+        }
+        
+        .heroRegistrate div p {
+            font-size: 15px;
+        }
+        
+        .heroRegistrate .registrateImg img {
+            width: 290px;
+            height: 280px;
+        } 
+        .formulario {
+            width: 800px;
+            font-size: 15px;
+        }
+        .formulario h3 {
+            font-size: 20px;
+        }
+    
+        .formulario div form h4 {
+            font-size: 18px;
+        }
+    
+        .formulario form label {
+            font-size: 15px;
+        }
+        .formulario div form .boton{
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .heroRegistrate {
+            height: 200px;
+            padding: 2px;
+            flex-direction: column;
+            text-align: center;
+        }
+        .heroRegistrate div h1 {
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        
+        .heroRegistrate div h2 {
+            font-size: 20px;
+        }
+        
+        .heroRegistrate div p {
+            font-size: 14px;
+        }
+        
+        .heroRegistrate .registrateImg img {
+        display: none;
+        } 
+        .formulario {
+            width: 600px;
+            font-size: 13px;
+        }
+        .formulario h3 {
+            font-size: 18px;
+        }
+    
+        .formulario div form h4 {
+            font-size: 15px;
+        }
+    
+        .formulario form label {
+            font-size: 15px;
+        }
+        .formulario form .item{
+            height: 35px;
+            font-size: 14px;
+        }
+        .formulario div form .boton{
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width:480px){
+        .heroRegistrate {
+            height: 190px;
+            margin-top: 10px;
+        }
+        .heroRegistrate div h1 {
+            font-size: 25px;
+        }
+        
+        .heroRegistrate div h2 {
+            font-size: 20px;
+        }
+        
+        .heroRegistrate div p {
+            font-size: 12px;
+        }
+    
+        .formulario {
+            width: 350px;
+            font-size: 12px;
+        }
+        .formulario h3 {
+            font-size: 15px;
+        }
+    
+        .formulario div form h4 {
+            font-size: 13px;
+        }
+    
+        .formulario form label {
+            font-size: 13px;
+        }
+        .formluario form .item{
+            height: 30px;
+            font-size: 12px;
+        }
+        .formulario div form .boton{
+            font-size: 12px;
+        }
+    }}
+
+/* PRODUCTOS - MEDIA QUERIE- */
+@media screen and (max-width:1024px){
+    .heroProductos{
+        width: 100%;
+        height: 400px;
+    }
+    .heroProductos .encabezadoProductos h1{
+        font-size: nth($font-size,10);
+    }
+    .especialidadesProductos .especialidadestitulo h2{
+        font-size: nth($font-size,10);
+    }
+    .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria{
+        display: grid;
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: 150px 150px 150px 150px 150px;
+    }
+    }
+    @media screen and (max-width:768px){
+        .heroProductos{
+            height: 300px;
+            justify-content: center;
+        }
+        .heroProductos .encabezadoProductos h1{
+            font-size: nth($font-size,9);
+            text-align: center;
+            padding-left: 0;
+        }
+        .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria{
+            display: grid;
+            grid-template-columns: repeat(2, 280px);
+            grid-template-rows: 150px 150px 150px 150px 150px;
+        }
+    }
+    @media screen and (max-width:480px){
+        .heroProductos{
+            height: 200px;
+        }
+        .heroProductos .encabezadoProductos h1{
+            font-size: nth($font-size,8);
+        }
+        .especialidadesProductos .especialidadestitulo h2{
+            font-size: nth($font-size,7);
+        }
+        .especialidadesProductos .especialidadestitulo .gridContainerProductoGaleria{
+            display: grid;
+            grid-template-columns: repeat(1, 220px);
+            grid-template-rows: repeat(22, 150px);
+        }
+    }
+/* QUIENES SOMOS - MEDIA QUERIE- */
+@media screen and (max-width:1024px){
+    .heroQuienesSomos .encabezadoQuienesSomos h1{
+        font-size: nth($font-size,10);
+    }
+    .mision .misionDiv h2{
+        font-size: nth($font-size,9);
+    }
+    .mision .misionDiv p{
+        font-size: nth($font-size,5);
+        padding-left: 10px;
+    }
+    .mision .misionImg img{
+        width: 230px;
+        height: 290px;
+    }
+    .vision .visionDiv h2{
+        font-size: nth($font-size,9);
+    }
+    .vision .visionDiv p{
+        font-size: nth($font-size,5);
+        padding-left: 10px;
+    }
+    .vision .visionImg img{
+        width: 330px;
+        height: 380px;
+        margin-bottom: 10px;
+    }
+    .historia .nuestraHistoria h2{
+        font-size: nth($font-size,9);
+    }
+    .historia .nuestraHistoria p{
+        font-size: nth($font-size,5);
+        padding-left: 10px;
+    }
+    .historia .nuestraHistoriaImg img{
+        width: 430px;
+        height: 320px;
+    }
+    }
+    @media screen and (max-width:768px){
+        .heroQuienesSomos .encabezadoQuienesSomos h1{
+            font-size: nth($font-size,9);
+        }
+        .mision .misionDiv{
+            width: 100%;
+        }
+        .mision .misionDiv h2{
+            font-size: nth($font-size,8);
+        }
+        .vision .visionDiv{
+            width: 100%;
+        }
+        .vision .visionDiv h2{
+            font-size: nth($font-size,8);
+        }
+        .historia .nuestraHistoria{
+            width: 100%;
+        }
+        .historia .nuestraHistoria h2{
+            font-size: nth($font-size,8);
+        }
+    }
+    @media screen and (max-width:480px){
+        .heroQuienesSomos .encabezadoQuienesSomos h1{
+            font-size: nth($font-size,8);
+        }
+        .mision{
+            flex-direction: column;
+            height: 440px;
+        }
+        .mision .misionDiv{
+            margin-right: 0;
+        }
+        .mision .misionDiv h2{
+            font-size: nth($font-size,7);
+            text-align: center;
+        }
+        .mision .misionDiv p{
+            font-size: nth($font-size,3);
+        }
+        .mision .misionImg img{
+            width: 200px;
+            height: 260px;
+        }
+        .vision{
+            flex-direction: column;
+            height: 410px;
+            margin-top: 10px;
+        }
+        .vision .visionDiv{
+            margin-left: 0;
+        }
+        .vision .visionDiv h2{
+            font-size: nth($font-size,7);
+            text-align: center;
+        }
+        .vision .visionDiv p{
+            font-size: nth($font-size,3);
+        }
+        .vision .visionImg img{
+            width: 230px;
+            height: 290px;
+        }
+        .historia{
+            flex-direction: column;
+            height: 400px;
+            margin-top: 10px;
+        }
+        .historia .nuestraHistoria{
+            margin-right: 0;
+        }
+        .historia .nuestraHistoria h2{
+            font-size: nth($font-size,5);
+            text-align: center;
+        }
+        .historia .nuestraHistoria p{
+            font-size: nth($font-size,3);
+        }
+        .historia .nuestraHistoriaImg img{
+            width: 300px;
+            height: 250px;
+        }
+    }
+/* CONTACTOS - MEDIA QUERIE-*/
+@media screen and (max-width:1024px){
+    .heroContacto .heroTitulo h1{
+        font-size: nth($font-size,10);
+    }
+}
+@media screen and (max-width:768px){
+    .heroContacto .heroTitulo h1{
+        font-size: nth($font-size,9);
+    }
+    form .formularioContacto{
+        width: 400px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:480px){
+    .heroContacto .heroTitulo h1{
+        font-size: nth($font-size,8);
+    }
+    .contacto{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto .mapaContacto{
+        width: 100%;
+    }
+    .contacto .mapaContacto p{
+        text-align: center;
+    }
+    .contacto form .formularioContacto{
+        width: 90%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .contacto form .formularioContacto h3{
+        font-size: nth($font-size,4);
+    }
+}
